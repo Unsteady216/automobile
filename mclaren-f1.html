@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="McLaren F1 - The Ultimate Road Car">
+    <title>McLaren F1 (1992) - Vintage Legends</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* McLaren-specific sleek, aerodynamic animations */
+        .car-hero {
+            background-image: linear-gradient(135deg, rgba(10, 10, 10, 0.9) 0%, rgba(10, 10, 10, 0.6) 100%), 
+                              url('https://images.pexels.com/photos/30869721/pexels-photo-30869721.jpeg');
+        }
+        
+        .car-hero h1 {
+            animation: aerodynamic 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        @keyframes aerodynamic {
+            0% {
+                opacity: 0;
+                transform: perspective(1000px) rotateY(-90deg) translateX(-200px);
+            }
+            100% {
+                opacity: 1;
+                transform: perspective(1000px) rotateY(0deg) translateX(0);
+            }
+        }
+        
+        .spec-card {
+            animation: streamline 0.6s ease-out;
+            animation-fill-mode: both;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .spec-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 102, 0, 0.3), transparent);
+            transition: left 0.5s;
+        }
+        
+        .spec-card:hover::before {
+            left: 100%;
+        }
+        
+        .spec-card:nth-child(1) { animation-delay: 0.1s; }
+        .spec-card:nth-child(2) { animation-delay: 0.2s; }
+        .spec-card:nth-child(3) { animation-delay: 0.3s; }
+        .spec-card:nth-child(4) { animation-delay: 0.4s; }
+        .spec-card:nth-child(5) { animation-delay: 0.5s; }
+        .spec-card:nth-child(6) { animation-delay: 0.6s; }
+        
+        @keyframes streamline {
+            0% {
+                opacity: 0;
+                transform: translateX(-100px) skewX(-10deg);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0) skewX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Toggle -->
+    <button class="nav-toggle" data-testid="nav-toggle-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+        <div class="nav-header">
+            <h2>Vintage Legends</h2>
+            <p>Timeless Automotive Excellence</p>
+        </div>
+        <div class="nav-links">
+            <div class="nav-section">
+                <div class="nav-section-title">Main</div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="history.html">History</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-section">
+                <div class="nav-section-title">Collection</div>
+                <a href="shelby-cobra-427.html">Shelby Cobra 427</a>
+                <a href="ford-gt40.html">Ford GT40</a>
+                <a href="porsche-911-carrera.html">Porsche 911 Carrera RS</a>
+                <a href="ferrari-f40.html">Ferrari F40</a>
+                <a href="nissan-skyline-gtr.html">Nissan Skyline GT-R</a>
+                <a href="mclaren-f1.html">McLaren F1</a>
+                <a href="mitsubishi-lancer-evo.html">Mitsubishi Lancer Evo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="car-hero" data-testid="car-hero-section">
+        <div class="car-hero-content">
+            <h1 data-testid="car-hero-title">MCLAREN F1</h1>
+            <p class="tagline" data-testid="car-hero-tagline">"Engineering Perfection"</p>
+            <a href="#specs" class="cta-button" data-testid="view-specs-button">View Specifications</a>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section" data-testid="overview-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="overview-title">The Greatest Supercar</h2>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--text-gray); line-height: 1.9; font-size: 18px;">
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                The McLaren F1, unveiled in 1992, was the vision of legendary designer Gordon Murray: create the ultimate road car with no compromises. The result was a machine so advanced, so perfectly engineered, that it held the production car speed record for over a decade and remains one of the greatest automotive achievements in history.
+            </p>
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                The F1's most distinctive feature is its central driving position, flanked by two passenger seats. This unconventional layout provided the driver with perfect weight distribution and an unparalleled driving experience. The carbon fiber monocoque chassis weighed just 243 pounds, while the naturally aspirated BMW-derived 6.1-liter V12 produced 627 horsepower.
+            </p>
+            <p class="scroll-reveal">
+                Only 106 F1s were built (64 road cars), making it one of the most exclusive supercars ever produced. In 1998, an F1 set the production car speed record at 240.1 mph – a record that stood until 2005. Today, F1s regularly sell for over $20 million, making them among the most valuable cars in the world.
+            </p>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="section" id="specs" style="background: var(--secondary-dark);" data-testid="specs-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="specs-title">Technical Specifications</h2>
+        </div>
+        <div class="specs-grid">
+            <div class="spec-card" data-testid="spec-engine">
+                <h3><i class="fas fa-engine"></i> Engine</h3>
+                <p>6.1L BMW V12</p>
+            </div>
+            <div class="spec-card" data-testid="spec-power">
+                <h3><i class="fas fa-bolt"></i> Power</h3>
+                <p>627 HP @ 7400 RPM</p>
+            </div>
+            <div class="spec-card" data-testid="spec-acceleration">
+                <h3><i class="fas fa-tachometer-alt"></i> 0-60 MPH</h3>
+                <p>3.2 Seconds</p>
+            </div>
+            <div class="spec-card" data-testid="spec-top-speed">
+                <h3><i class="fas fa-gauge-high"></i> Top Speed</h3>
+                <p>240 MPH</p>
+            </div>
+            <div class="spec-card" data-testid="spec-weight">
+                <h3><i class="fas fa-weight-hanging"></i> Weight</h3>
+                <p>2,509 lbs</p>
+            </div>
+            <div class="spec-card" data-testid="spec-transmission">
+                <h3><i class="fas fa-gears"></i> Transmission</h3>
+                <p>6-Speed Manual</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section class="section" data-testid="heritage-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="heritage-title">Racing Glory</h2>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--text-gray); line-height: 1.9; font-size: 18px;">
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                In an incredible demonstration of the F1's capabilities, a modified F1 GTR won the 1995 24 Hours of Le Mans outright on its first attempt – the last time a car designed primarily for road use would win the prestigious race. Five F1 GTRs finished in the top six, embarrassing purpose-built prototypes.
+            </p>
+            <p class="scroll-reveal">
+                The F1's engineering philosophy – lightweight construction, naturally aspirated power, and manual transmission – stands in stark contrast to modern hypercars with their turbochargers, hybrid systems, and dual-clutch gearboxes. Many enthusiasts still consider the F1 the greatest driver's car ever made, a pure expression of automotive perfection that may never be equaled.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Vintage Legends</h3>
+            <p>&copy; 2025 Vintage Legends. Celebrating Automotive Heritage.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

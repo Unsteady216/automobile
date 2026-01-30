@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nissan Skyline GT-R R32 Godzilla - Japanese Performance Icon">
+    <title>Nissan Skyline GT-R R32 (1989) - Vintage Legends</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Nissan-specific tech-focused, futuristic animations */
+        .car-hero {
+            background-image: linear-gradient(135deg, rgba(10, 10, 10, 0.9) 0%, rgba(10, 10, 10, 0.6) 100%), 
+                              url('https://images.pexels.com/photos/9331816/pexels-photo-9331816.jpeg');
+        }
+        
+        .car-hero h1 {
+            animation: techReveal 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            text-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
+        }
+        
+        @keyframes techReveal {
+            0% {
+                opacity: 0;
+                transform: translateZ(-100px) scale(0.8);
+                filter: blur(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateZ(0) scale(1);
+                filter: blur(0);
+            }
+        }
+        
+        .spec-card {
+            animation: digitalPulse 0.8s ease-out;
+            animation-fill-mode: both;
+            border-left: 3px solid var(--orange-primary);
+        }
+        
+        .spec-card:nth-child(odd) {
+            animation-name: digitalSlideLeft;
+        }
+        
+        .spec-card:nth-child(even) {
+            animation-name: digitalSlideRight;
+        }
+        
+        .spec-card:nth-child(1) { animation-delay: 0.1s; }
+        .spec-card:nth-child(2) { animation-delay: 0.2s; }
+        .spec-card:nth-child(3) { animation-delay: 0.3s; }
+        .spec-card:nth-child(4) { animation-delay: 0.4s; }
+        .spec-card:nth-child(5) { animation-delay: 0.5s; }
+        .spec-card:nth-child(6) { animation-delay: 0.6s; }
+        
+        @keyframes digitalSlideLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes digitalSlideRight {
+            0% {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Toggle -->
+    <button class="nav-toggle" data-testid="nav-toggle-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+        <div class="nav-header">
+            <h2>Vintage Legends</h2>
+            <p>Timeless Automotive Excellence</p>
+        </div>
+        <div class="nav-links">
+            <div class="nav-section">
+                <div class="nav-section-title">Main</div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="history.html">History</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-section">
+                <div class="nav-section-title">Collection</div>
+                <a href="shelby-cobra-427.html">Shelby Cobra 427</a>
+                <a href="ford-gt40.html">Ford GT40</a>
+                <a href="porsche-911-carrera.html">Porsche 911 Carrera RS</a>
+                <a href="ferrari-f40.html">Ferrari F40</a>
+                <a href="nissan-skyline-gtr.html">Nissan Skyline GT-R</a>
+                <a href="mclaren-f1.html">McLaren F1</a>
+                <a href="mitsubishi-lancer-evo.html">Mitsubishi Lancer Evo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="car-hero" data-testid="car-hero-section">
+        <div class="car-hero-content">
+            <h1 data-testid="car-hero-title">NISSAN SKYLINE GT-R R32</h1>
+            <p class="tagline" data-testid="car-hero-tagline">"Godzilla Awakens"</p>
+            <a href="#specs" class="cta-button" data-testid="view-specs-button">View Specifications</a>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section" data-testid="overview-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="overview-title">JDM Legend</h2>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--text-gray); line-height: 1.9; font-size: 18px;">
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                The R32 Skyline GT-R, introduced in 1989, brought back the legendary GT-R nameplate after a 16-year hiatus. Nicknamed "Godzilla" by Australian racing media after its dominance in touring car racing, the R32 revolutionized performance car technology with its advanced ATTESA E-TS all-wheel-drive system.
+            </p>
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                Powered by the legendary RB26DETT twin-turbocharged inline-six engine producing 280 horsepower (officially, but realistically closer to 320 HP), the R32 GT-R combined Japanese engineering excellence with raw performance. Its sophisticated AWD system could send up to 50% of power to the front wheels when needed, providing grip that was unheard of at the time.
+            </p>
+            <p class="scroll-reveal">
+                The R32 won 29 consecutive races in Japanese Touring Car Championship from 1990 to 1993, cementing its legendary status. Today, it's the most affordable classic GT-R and has become an icon of JDM culture worldwide, especially after being featured in video games and movies.
+            </p>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="section" id="specs" style="background: var(--secondary-dark);" data-testid="specs-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="specs-title">Technical Specifications</h2>
+        </div>
+        <div class="specs-grid">
+            <div class="spec-card" data-testid="spec-engine">
+                <h3><i class="fas fa-engine"></i> Engine</h3>
+                <p>2.6L Twin-Turbo I6</p>
+            </div>
+            <div class="spec-card" data-testid="spec-power">
+                <h3><i class="fas fa-bolt"></i> Power</h3>
+                <p>280 HP @ 6800 RPM</p>
+            </div>
+            <div class="spec-card" data-testid="spec-acceleration">
+                <h3><i class="fas fa-tachometer-alt"></i> 0-60 MPH</h3>
+                <p>4.8 Seconds</p>
+            </div>
+            <div class="spec-card" data-testid="spec-top-speed">
+                <h3><i class="fas fa-gauge-high"></i> Top Speed</h3>
+                <p>156 MPH</p>
+            </div>
+            <div class="spec-card" data-testid="spec-weight">
+                <h3><i class="fas fa-weight-hanging"></i> Weight</h3>
+                <p>3,153 lbs</p>
+            </div>
+            <div class="spec-card" data-testid="spec-transmission">
+                <h3><i class="fas fa-gears"></i> Transmission</h3>
+                <p>5-Speed Manual</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section class="section" data-testid="heritage-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="heritage-title">Racing Dominance</h2>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--text-gray); line-height: 1.9; font-size: 18px;">
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                The R32's racing success wasn't limited to Japan. In Australia's prestigious Bathurst 1000, the R32 shocked the motorsport world by defeating the dominant Ford and Holden V8 sedans. Its technology was so advanced that regulations were eventually changed to limit its dominance.
+            </p>
+            <p class="scroll-reveal">
+                The RB26DETT engine became legendary in the tuning community, with enthusiasts regularly extracting 500-1000+ horsepower with modifications. This tuning potential, combined with the car's racing pedigree and iconic status, has made the R32 GT-R one of the most sought-after Japanese performance cars in history.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Vintage Legends</h3>
+            <p>&copy; 2025 Vintage Legends. Celebrating Automotive Heritage.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mitsubishi Lancer Evolution VI TME - Rally-Bred Excellence">
+    <title>Mitsubishi Lancer Evolution VI TME (1999) - Vintage Legends</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Mitsubishi-specific rally, dynamic animations */
+        .car-hero {
+            background-image: linear-gradient(135deg, rgba(10, 10, 10, 0.9) 0%, rgba(10, 10, 10, 0.6) 100%), 
+                              url('https://images.pexels.com/photos/10182893/pexels-photo-10182893.jpeg');
+        }
+        
+        .car-hero h1 {
+            animation: rallySlide 1.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        @keyframes rallySlide {
+            0% {
+                opacity: 0;
+                transform: translateX(-150px) rotate(-10deg) translateY(50px);
+            }
+            50% {
+                transform: translateX(30px) rotate(5deg) translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0) rotate(0) translateY(0);
+            }
+        }
+        
+        .spec-card {
+            animation: rallyBounce 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            animation-fill-mode: both;
+        }
+        
+        .spec-card:nth-child(1) { animation-delay: 0.15s; }
+        .spec-card:nth-child(2) { animation-delay: 0.25s; }
+        .spec-card:nth-child(3) { animation-delay: 0.35s; }
+        .spec-card:nth-child(4) { animation-delay: 0.45s; }
+        .spec-card:nth-child(5) { animation-delay: 0.55s; }
+        .spec-card:nth-child(6) { animation-delay: 0.65s; }
+        
+        @keyframes rallyBounce {
+            0% {
+                opacity: 0;
+                transform: translateY(100px) scale(0.8);
+            }
+            50% {
+                transform: translateY(-20px) scale(1.05);
+            }
+            70% {
+                transform: translateY(10px) scale(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        
+        .spec-card:hover {
+            animation: shake 0.5s;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0) rotate(0); }
+            25% { transform: translateX(-5px) rotate(-1deg); }
+            75% { transform: translateX(5px) rotate(1deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Toggle -->
+    <button class="nav-toggle" data-testid="nav-toggle-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+        <div class="nav-header">
+            <h2>Vintage Legends</h2>
+            <p>Timeless Automotive Excellence</p>
+        </div>
+        <div class="nav-links">
+            <div class="nav-section">
+                <div class="nav-section-title">Main</div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="history.html">History</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-section">
+                <div class="nav-section-title">Collection</div>
+                <a href="shelby-cobra-427.html">Shelby Cobra 427</a>
+                <a href="ford-gt40.html">Ford GT40</a>
+                <a href="porsche-911-carrera.html">Porsche 911 Carrera RS</a>
+                <a href="ferrari-f40.html">Ferrari F40</a>
+                <a href="nissan-skyline-gtr.html">Nissan Skyline GT-R</a>
+                <a href="mclaren-f1.html">McLaren F1</a>
+                <a href="mitsubishi-lancer-evo.html">Mitsubishi Lancer Evo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="car-hero" data-testid="car-hero-section">
+        <div class="car-hero-content">
+            <h1 data-testid="car-hero-title">MITSUBISHI LANCER EVOLUTION VI TME</h1>
+            <p class="tagline" data-testid="car-hero-tagline">"Rally Champion, Street Legal"</p>
+            <a href="#specs" class="cta-button" data-testid="view-specs-button">View Specifications</a>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section" data-testid="overview-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="overview-title">Rally Heritage</h2>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--text-gray); line-height: 1.9; font-size: 18px;">
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                The Tommi Mäkinen Edition (TME) of the Lancer Evolution VI, released in 1999, honored the Finnish rally legend who won four consecutive World Rally Championships with Mitsubishi from 1996-1999. This special edition combined championship-winning technology with enhancements that made it the ultimate Evo.
+            </p>
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                The TME featured a unique front bumper for improved aerodynamics, titanium turbine wheels that were lighter than standard, Recaro bucket seats, and a distinctive red/silver paint scheme. The 2.0-liter turbocharged 4G63 engine produced 280 horsepower (Japan's gentlemen's agreement figure), but the true output was closer to 300 HP.
+            </p>
+            <p class="scroll-reveal">
+                What made the Evolution special was its sophisticated all-wheel-drive system with Active Yaw Control (AYC), which could vector torque between the rear wheels for incredible cornering ability. This technology, derived directly from rally competition, gave the Evo handling that rivaled supercars costing many times more.
+            </p>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="section" id="specs" style="background: var(--secondary-dark);" data-testid="specs-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="specs-title">Technical Specifications</h2>
+        </div>
+        <div class="specs-grid">
+            <div class="spec-card" data-testid="spec-engine">
+                <h3><i class="fas fa-engine"></i> Engine</h3>
+                <p>2.0L Turbo I4</p>
+            </div>
+            <div class="spec-card" data-testid="spec-power">
+                <h3><i class="fas fa-bolt"></i> Power</h3>
+                <p>280 HP @ 6500 RPM</p>
+            </div>
+            <div class="spec-card" data-testid="spec-acceleration">
+                <h3><i class="fas fa-tachometer-alt"></i> 0-60 MPH</h3>
+                <p>4.6 Seconds</p>
+            </div>
+            <div class="spec-card" data-testid="spec-top-speed">
+                <h3><i class="fas fa-gauge-high"></i> Top Speed</h3>
+                <p>155 MPH</p>
+            </div>
+            <div class="spec-card" data-testid="spec-weight">
+                <h3><i class="fas fa-weight-hanging"></i> Weight</h3>
+                <p>3,020 lbs</p>
+            </div>
+            <div class="spec-card" data-testid="spec-transmission">
+                <h3><i class="fas fa-gears"></i> Transmission</h3>
+                <p>5-Speed Manual</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section class="section" data-testid="heritage-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="heritage-title">WRC Dominance</h2>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--text-gray); line-height: 1.9; font-size: 18px;">
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                The Evolution series was born from Mitsubishi's World Rally Championship program, and the direct connection between race car and road car was stronger than almost any other manufacturer. Technologies developed on gravel stages around the world found their way directly into production Evos, creating a true rally car for the street.
+            </p>
+            <p class="scroll-reveal">
+                The Evo VI TME represents the peak of the "golden era" of Japanese performance cars. Its combination of turbocharged power, advanced AWD technology, and raw driving dynamics made it a giant killer on both road and track. Today, clean TME examples are highly sought after by collectors, with values appreciating significantly as enthusiasts recognize the Evo VI as one of the greatest performance bargains in automotive history.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Vintage Legends</h3>
+            <p>&copy; 2025 Vintage Legends. Celebrating Automotive Heritage.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Vintage Legends">
+    <title>Contact - Vintage Legends</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Toggle -->
+    <button class="nav-toggle" data-testid="nav-toggle-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+        <div class="nav-header">
+            <h2>Vintage Legends</h2>
+            <p>Timeless Automotive Excellence</p>
+        </div>
+        <div class="nav-links">
+            <div class="nav-section">
+                <div class="nav-section-title">Main</div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="history.html">History</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-section">
+                <div class="nav-section-title">Collection</div>
+                <a href="shelby-cobra-427.html">Shelby Cobra 427</a>
+                <a href="ford-gt40.html">Ford GT40</a>
+                <a href="porsche-911-carrera.html">Porsche 911 Carrera RS</a>
+                <a href="ferrari-f40.html">Ferrari F40</a>
+                <a href="nissan-skyline-gtr.html">Nissan Skyline GT-R</a>
+                <a href="mclaren-f1.html">McLaren F1</a>
+                <a href="mitsubishi-lancer-evo.html">Mitsubishi Lancer Evo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay"></div>
+
+    <!-- Header Section -->
+    <header class="header" style="height: 60vh;" data-testid="contact-hero-section">
+        <div class="header-content">
+            <h1 data-testid="contact-title">CONTACT US</h1>
+            <p class="subtitle" data-testid="contact-subtitle">Let's Talk About Legends</p>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="section" data-testid="contact-form-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="form-title">Get In Touch</h2>
+            <p>Have questions about our collection? Want to share your own automotive story? We'd love to hear from you.</p>
+        </div>
+
+        <div class="contact-container">
+            <form class="contact-form scroll-reveal" data-testid="contact-form">
+                <div class="form-group">
+                    <label for="name" data-testid="name-label">Name</label>
+                    <input type="text" id="name" name="name" required data-testid="name-input" placeholder="Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" data-testid="email-label">Email</label>
+                    <input type="email" id="email" name="email" required data-testid="email-input" placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject" data-testid="subject-label">Subject</label>
+                    <input type="text" id="subject" name="subject" required data-testid="subject-input" placeholder="What's this about?">
+                </div>
+
+                <div class="form-group">
+                    <label for="message" data-testid="message-label">Message</label>
+                    <textarea id="message" name="message" required data-testid="message-textarea" placeholder="Tell us your thoughts..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-button" data-testid="submit-button">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="section" style="background: var(--secondary-dark);" data-testid="contact-info-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="info-title">Other Ways to Connect</h2>
+        </div>
+        
+        <div class="specs-grid">
+            <div class="spec-card scroll-reveal" data-testid="info-email">
+                <h3><i class="fas fa-envelope"></i> Email</h3>
+                <p>info@vintagelegends.com</p>
+            </div>
+            
+            <div class="spec-card scroll-reveal" data-testid="info-phone">
+                <h3><i class="fas fa-phone"></i> Phone</h3>
+                <p>+1 (555) 123-4567</p>
+            </div>
+            
+            <div class="spec-card scroll-reveal" data-testid="info-location">
+                <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
+                <p>Los Angeles, California</p>
+            </div>
+            
+            <div class="spec-card scroll-reveal" data-testid="info-hours">
+                <h3><i class="fas fa-clock"></i> Hours</h3>
+                <p>Mon-Fri: 9AM - 6PM PST</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Section -->
+    <section class="section" data-testid="social-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="social-title">Follow Our Journey</h2>
+            <p>Stay updated with the latest from Vintage Legends</p>
+        </div>
+        
+        <div style="display: flex; justify-content: center; gap: 30px; margin-top: 40px; flex-wrap: wrap;">
+            <a href="#" class="cta-button" data-testid="facebook-link" style="display: inline-flex; align-items: center; gap: 10px;">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="#" class="cta-button" data-testid="instagram-link" style="display: inline-flex; align-items: center; gap: 10px;">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="#" class="cta-button" data-testid="twitter-link" style="display: inline-flex; align-items: center; gap: 10px;">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="#" class="cta-button" data-testid="youtube-link" style="display: inline-flex; align-items: center; gap: 10px;">
+                <i class="fab fa-youtube"></i> YouTube
+            </a>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section" style="background: var(--secondary-dark);" data-testid="newsletter-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="newsletter-title">Join Our Community</h2>
+            <p>Subscribe to receive updates about new additions to our collection and exclusive content</p>
+        </div>
+        
+        <div class="contact-container">
+            <form class="contact-form scroll-reveal" style="max-width: 600px; margin: 0 auto;" data-testid="newsletter-form">
+                <div class="form-group">
+                    <input type="email" id="newsletter-email" name="newsletter-email" required data-testid="newsletter-email" placeholder="Enter your email address" style="margin-bottom: 20px;">
+                </div>
+                <button type="submit" class="submit-button" data-testid="newsletter-submit">
+                    Subscribe to Newsletter
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Vintage Legends</h3>
+            <p>&copy; 2025 Vintage Legends. Celebrating Automotive Heritage.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

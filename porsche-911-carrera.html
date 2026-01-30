@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Porsche 911 Carrera RS 2.7 - German Precision">
+    <title>Porsche 911 Carrera RS 2.7 (1973) - Vintage Legends</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Porsche-specific precise, elegant animations */
+        .car-hero {
+            background-image: linear-gradient(135deg, rgba(10, 10, 10, 0.9) 0%, rgba(10, 10, 10, 0.6) 100%), 
+                              url('https://images.pexels.com/photos/35849577/pexels-photo-35849577.jpeg');
+        }
+        
+        .car-hero h1 {
+            animation: preciseDrift 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+        }
+        
+        @keyframes preciseDrift {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px) rotate(-3deg);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0) rotate(0);
+            }
+        }
+        
+        .spec-card {
+            animation: germanEngineering 0.6s ease-in-out;
+            animation-fill-mode: both;
+        }
+        
+        .spec-card:nth-child(1) { animation-delay: 0.15s; }
+        .spec-card:nth-child(2) { animation-delay: 0.30s; }
+        .spec-card:nth-child(3) { animation-delay: 0.45s; }
+        .spec-card:nth-child(4) { animation-delay: 0.60s; }
+        .spec-card:nth-child(5) { animation-delay: 0.75s; }
+        .spec-card:nth-child(6) { animation-delay: 0.90s; }
+        
+        @keyframes germanEngineering {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+                filter: blur(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+                filter: blur(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Toggle -->
+    <button class="nav-toggle" data-testid="nav-toggle-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+        <div class="nav-header">
+            <h2>Vintage Legends</h2>
+            <p>Timeless Automotive Excellence</p>
+        </div>
+        <div class="nav-links">
+            <div class="nav-section">
+                <div class="nav-section-title">Main</div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="history.html">History</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-section">
+                <div class="nav-section-title">Collection</div>
+                <a href="shelby-cobra-427.html">Shelby Cobra 427</a>
+                <a href="ford-gt40.html">Ford GT40</a>
+                <a href="porsche-911-carrera.html">Porsche 911 Carrera RS</a>
+                <a href="ferrari-f40.html">Ferrari F40</a>
+                <a href="nissan-skyline-gtr.html">Nissan Skyline GT-R</a>
+                <a href="mclaren-f1.html">McLaren F1</a>
+                <a href="mitsubishi-lancer-evo.html">Mitsubishi Lancer Evo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="car-hero" data-testid="car-hero-section">
+        <div class="car-hero-content">
+            <h1 data-testid="car-hero-title">PORSCHE 911 CARRERA RS 2.7</h1>
+            <p class="tagline" data-testid="car-hero-tagline">"The Ultimate Air-Cooled Icon"</p>
+            <a href="#specs" class="cta-button" data-testid="view-specs-button">View Specifications</a>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section" data-testid="overview-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="overview-title">German Precision Engineering</h2>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--text-gray); line-height: 1.9; font-size: 18px;">
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                The 1973 Porsche 911 Carrera RS 2.7 represents the pinnacle of air-cooled 911 design. Created to homologate the 911 for FIA Group 4 racing, Porsche produced what many consider the greatest sports car ever made. The iconic ducktail spoiler wasn't just for looks – it provided crucial high-speed stability.
+            </p>
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                Weighing just 2,370 pounds thanks to thinner steel body panels and lightweight components, the RS 2.7 combined a larger 2.7-liter flat-six engine with precision handling that set new benchmarks for driver engagement. Every aspect was optimized for pure driving pleasure.
+            </p>
+            <p class="scroll-reveal">
+                Originally planned for 500 units, demand was so overwhelming that Porsche produced 1,580 examples. Today, the RS 2.7 is one of the most coveted and valuable classic Porsches, with pristine examples commanding seven-figure prices.
+            </p>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="section" id="specs" style="background: var(--secondary-dark);" data-testid="specs-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="specs-title">Technical Specifications</h2>
+        </div>
+        <div class="specs-grid">
+            <div class="spec-card" data-testid="spec-engine">
+                <h3><i class="fas fa-engine"></i> Engine</h3>
+                <p>2.7L Flat-6</p>
+            </div>
+            <div class="spec-card" data-testid="spec-power">
+                <h3><i class="fas fa-bolt"></i> Power</h3>
+                <p>210 HP @ 6300 RPM</p>
+            </div>
+            <div class="spec-card" data-testid="spec-acceleration">
+                <h3><i class="fas fa-tachometer-alt"></i> 0-60 MPH</h3>
+                <p>5.5 Seconds</p>
+            </div>
+            <div class="spec-card" data-testid="spec-top-speed">
+                <h3><i class="fas fa-gauge-high"></i> Top Speed</h3>
+                <p>152 MPH</p>
+            </div>
+            <div class="spec-card" data-testid="spec-weight">
+                <h3><i class="fas fa-weight-hanging"></i> Weight</h3>
+                <p>2,370 lbs</p>
+            </div>
+            <div class="spec-card" data-testid="spec-transmission">
+                <h3><i class="fas fa-gears"></i> Transmission</h3>
+                <p>5-Speed Manual</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section class="section" data-testid="heritage-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="heritage-title">Racing Pedigree</h2>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--text-gray); line-height: 1.9; font-size: 18px;">
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                The Carrera RS dominated touring car racing throughout the 1970s, winning championships across Europe. Its lightweight construction and powerful engine made it nearly unbeatable in its class, establishing Porsche's reputation for building race-winning production cars.
+            </p>
+            <p class="scroll-reveal">
+                The RS's influence extends far beyond its racing success. It established the formula for all subsequent high-performance 911s: lightweight construction, powerful naturally aspirated engine, and suspension tuned for maximum driver feedback. Every RS, GT3, and GT2 that followed owes its existence to this 1973 masterpiece.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Vintage Legends</h3>
+            <p>&copy; 2025 Vintage Legends. Celebrating Automotive Heritage.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ferrari F40 - Enzo Ferrari's Final Masterpiece">
+    <title>Ferrari F40 (1987) - Vintage Legends</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Ferrari-specific dramatic, passionate animations */
+        .car-hero {
+            background-image: linear-gradient(135deg, rgba(10, 10, 10, 0.9) 0%, rgba(10, 10, 10, 0.6) 100%), 
+                              url('https://images.unsplash.com/photo-1679604422070-9b282b8dd9ab?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwxfHxGZXJyYXJpJTIwRjQwJTIwMTk4NyUyMHN1cGVyY2FyfGVufDB8fHx8MTc2OTUyMDk1OXww&ixlib=rb-4.1.0&q=85');
+        }
+        
+        .car-hero h1 {
+            animation: italianPassion 1.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            color: #ff2800;
+        }
+        
+        @keyframes italianPassion {
+            0% {
+                opacity: 0;
+                transform: scale(0.5) rotate(-10deg);
+            }
+            50% {
+                transform: scale(1.1) rotate(5deg);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) rotate(0);
+            }
+        }
+        
+        .spec-card {
+            animation: turboBoost 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+            animation-fill-mode: both;
+        }
+        
+        .spec-card:nth-child(1) { animation-delay: 0.2s; }
+        .spec-card:nth-child(2) { animation-delay: 0.35s; }
+        .spec-card:nth-child(3) { animation-delay: 0.5s; }
+        .spec-card:nth-child(4) { animation-delay: 0.65s; }
+        .spec-card:nth-child(5) { animation-delay: 0.8s; }
+        .spec-card:nth-child(6) { animation-delay: 0.95s; }
+        
+        @keyframes turboBoost {
+            0% {
+                opacity: 0;
+                transform: translateY(50px) rotate(-5deg) scale(0.8);
+            }
+            60% {
+                transform: translateY(-10px) rotate(2deg) scale(1.05);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) rotate(0) scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Toggle -->
+    <button class="nav-toggle" data-testid="nav-toggle-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+        <div class="nav-header">
+            <h2>Vintage Legends</h2>
+            <p>Timeless Automotive Excellence</p>
+        </div>
+        <div class="nav-links">
+            <div class="nav-section">
+                <div class="nav-section-title">Main</div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="history.html">History</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-section">
+                <div class="nav-section-title">Collection</div>
+                <a href="shelby-cobra-427.html">Shelby Cobra 427</a>
+                <a href="ford-gt40.html">Ford GT40</a>
+                <a href="porsche-911-carrera.html">Porsche 911 Carrera RS</a>
+                <a href="ferrari-f40.html">Ferrari F40</a>
+                <a href="nissan-skyline-gtr.html">Nissan Skyline GT-R</a>
+                <a href="mclaren-f1.html">McLaren F1</a>
+                <a href="mitsubishi-lancer-evo.html">Mitsubishi Lancer Evo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="car-hero" data-testid="car-hero-section">
+        <div class="car-hero-content">
+            <h1 data-testid="car-hero-title">FERRARI F40</h1>
+            <p class="tagline" data-testid="car-hero-tagline">"The Last Testament of Enzo"</p>
+            <a href="#specs" class="cta-button" data-testid="view-specs-button">View Specifications</a>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section" data-testid="overview-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="overview-title">Italian Supercar Perfection</h2>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--text-gray); line-height: 1.9; font-size: 18px;">
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                The Ferrari F40, unveiled in 1987 to celebrate Ferrari's 40th anniversary, was Enzo Ferrari's final automotive statement before his death in 1988. It represented his pure vision: a street-legal race car with no compromises, no comfort features, just raw performance and passion.
+            </p>
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                Built around a tubular steel frame with Kevlar and carbon fiber body panels, the F40 weighed just 2,425 pounds. Its twin-turbocharged 2.9-liter V8 produced 478 horsepower, launching it to 60 mph in 3.8 seconds and on to a top speed of 201 mph – making it the first production car to break the 200 mph barrier.
+            </p>
+            <p class="scroll-reveal">
+                Inside, there was no leather, no carpeting, no sound deadening – just exposed carbon fiber, racing seats, and the intoxicating sound of the V8 behind your head. The F40 wasn't meant to coddle; it was meant to thrill, and it succeeded brilliantly.
+            </p>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="section" id="specs" style="background: var(--secondary-dark);" data-testid="specs-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="specs-title">Technical Specifications</h2>
+        </div>
+        <div class="specs-grid">
+            <div class="spec-card" data-testid="spec-engine">
+                <h3><i class="fas fa-engine"></i> Engine</h3>
+                <p>2.9L Twin-Turbo V8</p>
+            </div>
+            <div class="spec-card" data-testid="spec-power">
+                <h3><i class="fas fa-bolt"></i> Power</h3>
+                <p>478 HP @ 7000 RPM</p>
+            </div>
+            <div class="spec-card" data-testid="spec-acceleration">
+                <h3><i class="fas fa-tachometer-alt"></i> 0-60 MPH</h3>
+                <p>3.8 Seconds</p>
+            </div>
+            <div class="spec-card" data-testid="spec-top-speed">
+                <h3><i class="fas fa-gauge-high"></i> Top Speed</h3>
+                <p>201 MPH</p>
+            </div>
+            <div class="spec-card" data-testid="spec-weight">
+                <h3><i class="fas fa-weight-hanging"></i> Weight</h3>
+                <p>2,425 lbs</p>
+            </div>
+            <div class="spec-card" data-testid="spec-transmission">
+                <h3><i class="fas fa-gears"></i> Transmission</h3>
+                <p>5-Speed Manual</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section class="section" data-testid="heritage-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="heritage-title">Supercar Icon</h2>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--text-gray); line-height: 1.9; font-size: 18px;">
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                The F40 competed in various GT racing series throughout the late 1980s and early 1990s, proving that its performance capabilities extended beyond the street. Its race versions, particularly in IMSA competition, showcased Ferrari's racing DNA translated directly to a road car.
+            </p>
+            <p class="scroll-reveal">
+                More than three decades after its introduction, the F40 remains the benchmark by which all supercars are measured. It represents a simpler time when driving experience mattered more than lap times or luxury features. Values have skyrocketed, with pristine examples now commanding prices well over $2 million, cementing its status as one of the greatest Ferraris ever built.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Vintage Legends</h3>
+            <p>&copy; 2025 Vintage Legends. Celebrating Automotive Heritage.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

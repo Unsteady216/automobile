@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shelby Cobra 427 - Raw American muscle meets British elegance">
+    <title>Shelby Cobra 427 (1965) - Vintage Legends</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Shelby-specific aggressive animations */
+        .car-hero {
+            background-image: linear-gradient(135deg, rgba(10, 10, 10, 0.9) 0%, rgba(10, 10, 10, 0.6) 100%), 
+                              url('https://images.pexels.com/photos/12738212/pexels-photo-12738212.jpeg');
+        }
+        
+        .car-hero h1 {
+            animation: roar 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        @keyframes roar {
+            0%, 100% { transform: translateX(0); }
+            20% { transform: translateX(-20px) rotate(-2deg); }
+            40% { transform: translateX(20px) rotate(2deg); }
+            60% { transform: translateX(-15px) rotate(-1deg); }
+            80% { transform: translateX(15px) rotate(1deg); }
+        }
+        
+        .spec-card {
+            animation: revEngine 0.5s ease-in-out;
+            animation-fill-mode: both;
+        }
+        
+        .spec-card:nth-child(1) { animation-delay: 0.2s; }
+        .spec-card:nth-child(2) { animation-delay: 0.4s; }
+        .spec-card:nth-child(3) { animation-delay: 0.6s; }
+        .spec-card:nth-child(4) { animation-delay: 0.8s; }
+        
+        @keyframes revEngine {
+            0% {
+                opacity: 0;
+                transform: scale(0.8) rotate(-5deg);
+            }
+            50% {
+                transform: scale(1.05) rotate(2deg);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) rotate(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Toggle -->
+    <button class="nav-toggle" data-testid="nav-toggle-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+        <div class="nav-header">
+            <h2>Vintage Legends</h2>
+            <p>Timeless Automotive Excellence</p>
+        </div>
+        <div class="nav-links">
+            <div class="nav-section">
+                <div class="nav-section-title">Main</div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="history.html">History</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-section">
+                <div class="nav-section-title">Collection</div>
+                <a href="shelby-cobra-427.html">Shelby Cobra 427</a>
+                <a href="ford-gt40.html">Ford GT40</a>
+                <a href="porsche-911-carrera.html">Porsche 911 Carrera RS</a>
+                <a href="ferrari-f40.html">Ferrari F40</a>
+                <a href="nissan-skyline-gtr.html">Nissan Skyline GT-R</a>
+                <a href="mclaren-f1.html">McLaren F1</a>
+                <a href="mitsubishi-lancer-evo.html">Mitsubishi Lancer Evo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="car-hero" data-testid="car-hero-section">
+        <div class="car-hero-content">
+            <h1 data-testid="car-hero-title">SHELBY COBRA 427</h1>
+            <p class="tagline" data-testid="car-hero-tagline">"The Snake That Bit Back"</p>
+            <a href="#specs" class="cta-button" data-testid="view-specs-button">View Specifications</a>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section" data-testid="overview-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="overview-title">Raw Power Unleashed</h2>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--text-gray); line-height: 1.9; font-size: 18px;">
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                The Shelby Cobra 427 represents the pinnacle of Carroll Shelby's vision: take a lightweight British AC Ace roadster and drop in Ford's monstrous 7.0-liter V8 engine. The result was automotive insanity – a car that could accelerate from 0-60 mph in under 4 seconds and reach speeds over 160 mph in 1965.
+            </p>
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                With its aggressive flared fenders, side exhausts, and purposeful stance, the 427 Cobra was built for one thing: domination. The car's aluminum body weighed just 2,400 pounds, giving it a power-to-weight ratio that embarrassed every supercar of its era and many that came after.
+            </p>
+            <p class="scroll-reveal">
+                Only 348 427 Cobras were ever produced, making it one of the most valuable and sought-after American sports cars in history. Its raw, unfiltered driving experience – no power steering, no power brakes, just man and machine – remains legendary.
+            </p>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="section" id="specs" style="background: var(--secondary-dark);" data-testid="specs-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="specs-title">Technical Specifications</h2>
+        </div>
+        <div class="specs-grid">
+            <div class="spec-card" data-testid="spec-engine">
+                <h3><i class="fas fa-engine"></i> Engine</h3>
+                <p>7.0L Ford V8</p>
+            </div>
+            <div class="spec-card" data-testid="spec-power">
+                <h3><i class="fas fa-bolt"></i> Power</h3>
+                <p>425 HP @ 6000 RPM</p>
+            </div>
+            <div class="spec-card" data-testid="spec-acceleration">
+                <h3><i class="fas fa-tachometer-alt"></i> 0-60 MPH</h3>
+                <p>3.8 Seconds</p>
+            </div>
+            <div class="spec-card" data-testid="spec-top-speed">
+                <h3><i class="fas fa-gauge-high"></i> Top Speed</h3>
+                <p>164 MPH</p>
+            </div>
+            <div class="spec-card" data-testid="spec-weight">
+                <h3><i class="fas fa-weight-hanging"></i> Weight</h3>
+                <p>2,400 lbs</p>
+            </div>
+            <div class="spec-card" data-testid="spec-transmission">
+                <h3><i class="fas fa-gears"></i> Transmission</h3>
+                <p>4-Speed Manual</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section class="section" data-testid="heritage-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="heritage-title">Racing Heritage</h2>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--text-gray); line-height: 1.9; font-size: 18px;">
+            <p class="scroll-reveal" style="margin-bottom: 25px;">
+                The Cobra 427 wasn't just a street car – it was a racing weapon. Carroll Shelby's team campaigned Cobras in various racing series throughout the 1960s, achieving remarkable success against European competitors with much larger budgets.
+            </p>
+            <p class="scroll-reveal">
+                The 427's combination of American V8 power and nimble British chassis handling created a formula that couldn't be beaten. Its victories at tracks around the world cemented the Cobra's place in motorsport history and helped establish American performance credentials on the international stage.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Vintage Legends</h3>
+            <p>&copy; 2025 Vintage Legends. Celebrating Automotive Heritage.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

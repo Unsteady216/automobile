@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore legendary vintage automobiles - from the Shelby Cobra 427 to the McLaren F1">
+    <title>Vintage Legends - Classic Automobile Collection</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Toggle -->
+    <button class="nav-toggle" data-testid="nav-toggle-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav" data-testid="side-navigation">
+        <div class="nav-header">
+            <h2>Vintage Legends</h2>
+            <p>Timeless Automotive Excellence</p>
+        </div>
+        <div class="nav-links">
+            <div class="nav-section">
+                <div class="nav-section-title">Main</div>
+                <a href="index.html" data-testid="nav-home">Home</a>
+                <a href="about.html" data-testid="nav-about">About Us</a>
+                <a href="history.html" data-testid="nav-history">History</a>
+                <a href="gallery.html" data-testid="nav-gallery">Gallery</a>
+                <a href="contact.html" data-testid="nav-contact">Contact</a>
+            </div>
+            <div class="nav-section">
+                <div class="nav-section-title">Collection</div>
+                <a href="shelby-cobra-427.html" data-testid="nav-shelby">Shelby Cobra 427</a>
+                <a href="ford-gt40.html" data-testid="nav-ford">Ford GT40</a>
+                <a href="porsche-911-carrera.html" data-testid="nav-porsche">Porsche 911 Carrera RS</a>
+                <a href="ferrari-f40.html" data-testid="nav-ferrari">Ferrari F40</a>
+                <a href="nissan-skyline-gtr.html" data-testid="nav-nissan">Nissan Skyline GT-R</a>
+                <a href="mclaren-f1.html" data-testid="nav-mclaren">McLaren F1</a>
+                <a href="mitsubishi-lancer-evo.html" data-testid="nav-mitsubishi">Mitsubishi Lancer Evo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" data-testid="nav-overlay"></div>
+
+    <!-- Header Section -->
+    <header class="header" data-testid="hero-section">
+        <div class="header-content">
+            <h1 data-testid="hero-title">VINTAGE LEGENDS</h1>
+            <p class="subtitle" data-testid="hero-subtitle">Where Racing Heritage Meets Timeless Design</p>
+            <a href="#collection" class="cta-button" data-testid="explore-button">Explore Collection</a>
+        </div>
+    </header>
+
+    <!-- Car Collection Section -->
+    <section class="section" id="collection" data-testid="collection-section">
+        <div class="section-header scroll-reveal">
+            <h2 data-testid="collection-title">The Collection</h2>
+            <p data-testid="collection-description">Seven legendary machines that defined automotive excellence across decades</p>
+        </div>
+
+        <div class="car-grid">
+            <!-- Shelby Cobra 427 -->
+            <div class="car-card scroll-reveal" data-testid="car-card-shelby">
+                <img src="https://images.pexels.com/photos/12738212/pexels-photo-12738212.jpeg" alt="Shelby Cobra 427" class="car-image">
+                <div class="car-info">
+                    <h3 data-testid="car-name-shelby">Shelby Cobra 427</h3>
+                    <p class="year" data-testid="car-year-shelby">1965</p>
+                    <p>Raw American muscle meets British elegance. The most iconic roadster ever built, combining a lightweight chassis with a thunderous V8 that redefined performance.</p>
+                    <a href="shelby-cobra-427.html" class="learn-more" data-testid="learn-more-shelby">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Ford GT40 -->
+            <div class="car-card scroll-reveal" data-testid="car-card-ford">
+                <img src="https://images.unsplash.com/photo-1731005038620-e65716ae6483?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxGb3JkJTIwR1Q0MCUyMHZpbnRhZ2UlMjByYWNpbmclMjBjYXJ8ZW58MHx8fHwxNzY5NTIwOTU0fDA&ixlib=rb-4.1.0&q=85" alt="Ford GT40" class="car-image">
+                <div class="car-info">
+                    <h3 data-testid="car-name-ford">Ford GT40</h3>
+                    <p class="year" data-testid="car-year-ford">1966</p>
+                    <p>The Ferrari killer. Born from Henry Ford II's determination to conquer Le Mans, this American legend achieved four consecutive victories from 1966-1969.</p>
+                    <a href="ford-gt40.html" class="learn-more" data-testid="learn-more-ford">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Porsche 911 Carrera RS 2.7 -->
+            <div class="car-card scroll-reveal" data-testid="car-card-porsche">
+                <img src="https://images.pexels.com/photos/35849577/pexels-photo-35849577.jpeg" alt="Porsche 911 Carrera RS 2.7" class="car-image">
+                <div class="car-info">
+                    <h3 data-testid="car-name-porsche">Porsche 911 Carrera RS 2.7</h3>
+                    <p class="year" data-testid="car-year-porsche">1973</p>
+                    <p>German precision at its finest. The ducktail spoiler and lightweight construction made this the most desirable air-cooled 911 ever produced.</p>
+                    <a href="porsche-911-carrera.html" class="learn-more" data-testid="learn-more-porsche">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Ferrari F40 -->
+            <div class="car-card scroll-reveal" data-testid="car-card-ferrari">
+                <img src="https://images.unsplash.com/photo-1679604422070-9b282b8dd9ab?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwxfHxGZXJyYXJpJTIwRjQwJTIwMTk4NyUyMHN1cGVyY2FyfGVufDB8fHx8MTc2OTUyMDk1OXww&ixlib=rb-4.1.0&q=85" alt="Ferrari F40" class="car-image">
+                <div class="car-info">
+                    <h3 data-testid="car-name-ferrari">Ferrari F40</h3>
+                    <p class="year" data-testid="car-year-ferrari">1987</p>
+                    <p>Enzo Ferrari's final masterpiece. A twin-turbo V8 screaming through a raw, purposeful body that prioritized performance over comfort. Pure Italian passion.</p>
+                    <a href="ferrari-f40.html" class="learn-more" data-testid="learn-more-ferrari">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Nissan Skyline GT-R R32 -->
+            <div class="car-card scroll-reveal" data-testid="car-card-nissan">
+                <img src="https://images.pexels.com/photos/9331816/pexels-photo-9331816.jpeg" alt="Nissan Skyline GT-R R32" class="car-image">
+                <div class="car-info">
+                    <h3 data-testid="car-name-nissan">Nissan Skyline GT-R R32</h3>
+                    <p class="year" data-testid="car-year-nissan">1989</p>
+                    <p>"Godzilla" - The JDM legend that dominated Group A racing. Advanced all-wheel drive and twin-turbo technology created an unstoppable force on track and street.</p>
+                    <a href="nissan-skyline-gtr.html" class="learn-more" data-testid="learn-more-nissan">Learn More</a>
+                </div>
+            </div>
+
+            <!-- McLaren F1 -->
+            <div class="car-card scroll-reveal" data-testid="car-card-mclaren">
+                <img src="https://images.pexels.com/photos/30869721/pexels-photo-30869721.jpeg" alt="McLaren F1" class="car-image">
+                <div class="car-info">
+                    <h3 data-testid="car-name-mclaren">McLaren F1</h3>
+                    <p class="year" data-testid="car-year-mclaren">1992</p>
+                    <p>The ultimate road car. Central driving position, naturally aspirated BMW V12, and a top speed that remained unbeaten for over a decade. Engineering perfection.</p>
+                    <a href="mclaren-f1.html" class="learn-more" data-testid="learn-more-mclaren">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Mitsubishi Lancer Evolution VI TME -->
+            <div class="car-card scroll-reveal" data-testid="car-card-mitsubishi">
+                <img src="https://images.pexels.com/photos/10182893/pexels-photo-10182893.jpeg" alt="Mitsubishi Lancer Evolution VI TME" class="car-image">
+                <div class="car-info">
+                    <h3 data-testid="car-name-mitsubishi">Mitsubishi Lancer Evolution VI TME</h3>
+                    <p class="year" data-testid="car-year-mitsubishi">1999</p>
+                    <p>Rally-bred excellence. The Tommi Mäkinen Edition combined championship-winning technology with street legality, creating the ultimate point-to-point weapon.</p>
+                    <a href="mitsubishi-lancer-evo.html" class="learn-more" data-testid="learn-more-mitsubishi">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" data-testid="footer-section">
+        <div class="footer-content">
+            <h3>Vintage Legends</h3>
+            <p>&copy; 2025 Vintage Legends. Celebrating Automotive Heritage.</p>
+            <div class="social-links">
+                <a href="#" data-testid="social-facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" data-testid="social-instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" data-testid="social-twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" data-testid="social-youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
